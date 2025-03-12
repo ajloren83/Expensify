@@ -1,0 +1,20 @@
+{
+  "short_name": "Expensify",
+  "name": "Expensify PWA",
+  "icons": [
+    {
+      "src": "assets/icon-192x192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icon-512x512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff"
+}
