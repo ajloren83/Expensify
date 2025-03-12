@@ -144,3 +144,21 @@ th {
   font-weight: bold;
   color: #d9534f;
 }
+
+.check-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.check-btn:hover {
+  background: #218838;
+}
+
+.check-btn.hidden {
+  display: none;
+}

@@ -9,12 +9,16 @@ const STATIC_ASSETS = [
     '/assets/icon-512x512.svg'
 ];
 
+// Install event - Cache static assets
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
+    );
 });
 
+// Fetch event - Serve from cache first, then fallback to network
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(response => response || fetch(event.request))
+    );
 });
